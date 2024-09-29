@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "yelp-sentiment-project"
+version = "0.1.0"
+description = "Análise de Sentimento no Dataset do Yelp usando Pandas e VADER"
+authors = ["Luigi Lago <luigi.lago@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+fastparquet = "^2024.5.0"
+vadersentiment = "^3.3.2"
+pyarrow = "^17.0.0"
+prefect = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
