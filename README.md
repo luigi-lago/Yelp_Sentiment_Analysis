@@ -16,6 +16,25 @@ O projeto está organizado em três camadas principais que simulam um pipeline d
 
 - **my_project/**: Contém as funções principais de conversão, processamento e análise de sentimento.
 
+yelp_sentiment_project/
+│
+├── data/
+│   ├── raw/                      # Dados originais em formato JSON
+│   ├── staging/                  # Dados convertidos e processados em Parquet
+│   ├── processed/                # Dados finais processados
+│
+├── flows/
+│   ├── convert_data_flow.py      # Fluxo de conversão de JSON para Parquet com Prefect
+│   ├── sentiment_analysis_flow.py# Fluxo de análise de sentimentos e consolidação com Prefect
+│
+├── my_project/
+│   ├── __init__.py               # Facilita as importações dentro do pacote
+│   ├── data_processing.py        # Funções para conversão de JSON para Parquet e pré-processamento de dados
+│   └── sentiment_analysis.py     # Funções para análise de sentimento e consolidação dos resultados
+│
+└── README.md                     # Documentação do projeto
+
+
 ## Funcionalidades Principais:
 
 - **Conversão de JSON para Parquet**: A conversão dos arquivos brutos do Yelp (JSON) para o formato Parquet otimiza o uso de memória e acelera as operações de leitura e escrita nos dados.
