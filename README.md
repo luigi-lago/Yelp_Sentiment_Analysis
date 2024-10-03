@@ -16,6 +16,7 @@ O projeto está organizado em três camadas principais que simulam um pipeline d
 
 - **my_project/**: Contém as funções principais de conversão, processamento e análise de sentimento.
 
+```bash
 yelp_sentiment_project/
 │
 ├── data/
@@ -33,7 +34,7 @@ yelp_sentiment_project/
 │   └── sentiment_analysis.py     # Funções para análise de sentimento e consolidação dos resultados
 │
 └── README.md                     # Documentação do projeto
-
+```
 
 ## Funcionalidades Principais:
 
