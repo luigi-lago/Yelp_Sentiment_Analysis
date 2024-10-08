@@ -35,4 +35,4 @@ def convert_data_flow():
     run_convert_review_json()
 
 if __name__ == "__main__":
-    convert_data_flow()
+    convert_data_flow.with_options(name="Flow_Conversão_Dados")()

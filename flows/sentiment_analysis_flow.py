@@ -35,4 +35,4 @@ def sentiment_analysis_flow():
     run_consolidate_results()
 
 if __name__ == "__main__":
-    sentiment_analysis_flow()
+    sentiment_analysis_flow.with_options(name="Flow_Analise_Sentimento")()
